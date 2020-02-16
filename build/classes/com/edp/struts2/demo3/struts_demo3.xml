@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<!-- START SNIPPET: -->
+<struts>
+	<!-- Struts2为了管理action的配置，通过包进行管理。 -->
+	<!-- 配置Struts2的包========== -->
+	<!-- name唯一，随便写 -->
+	<!-- extends继承struts2-core-2.5.22.jar包下struts-default.xml的struts-default包 -->
+	<package name="demo3" extends="struts-default" namespace="/">
+		<global-results>
+			<result name="input">/demo3/demo1.jsp</result>
+		</global-results>
+		<action name="productAction1" class="com.edp.struts2.demo3.ProductAction1">
+			<!-- <result name="success">/demo1/demo2.jsp</result> -->
+		</action>
+		<action name="productAction2" class="com.edp.struts2.demo3.ProductAction2"/>
+	</package>
+
+</struts>
+
+<!-- END SNIPPET: -->

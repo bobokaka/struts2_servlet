@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<!-- START SNIPPET: -->
+<struts>
+	<!-- 配置struts2的常量 -->
+	<!-- Struts2请求的默认的扩展名。value可设置任意扩展名 -->
+	<!-- <constant name="struts.action.extension" value="action"/> -->
+
+	<!-- 路径要com/edp/struts/demo1/xxx这样的格式 -->
+	<include file="com/edp/struts2/demo1/struts_demo1.xml" />
+	<include file="com/edp/struts2/demo2/struts_demo2.xml"/>
+	<include file="com/edp/struts2/demo3/struts_demo3.xml"/>
+</struts>
+
+<!-- END SNIPPET: -->
